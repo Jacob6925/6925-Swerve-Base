@@ -38,7 +38,7 @@ public class RobotContainer {
     private final JoystickButton robotCentric = new JoystickButton(driver, XboxController.Button.kLeftBumper.value);
 
     /* Subsystems */
-    private final Swerve s_Swerve = new Swerve();
+    private final SwerveSubsys s_Swerve = new SwerveSubsys();
 
      /* AutoChooser */
      private final SendableChooser<Command> autoChooser;
