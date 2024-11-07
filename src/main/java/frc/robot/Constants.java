@@ -13,13 +13,23 @@ import frc.lib.util.COTSTalonFXSwerveConstants;
 import frc.lib.util.SwerveModuleConstants;
 
 public final class Constants {
+    /**
+     * WHEN CLONING THIS REPOSITORY:
+     * - change chosen module from null to correct module
+     * - change motor ids
+     *   - pigeon
+     *   - angle, drive, and cancoder of all modules
+     * - change drive motor characterization values from SysID (kS, kV, kA)
+     * - change maxSpeed and maxAngularVelocity
+     * - change angleNeutralMode and driveNeutralMode
+     */
     public static final double stickDeadband = 0.1;
 
     public static final class Swerve {
         public static final int pigeonID = 1;
 
-        public static final COTSTalonFXSwerveConstants chosenModule = 
-        COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L3);
+        public static final COTSTalonFXSwerveConstants chosenModule = null;
+        // example: COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L3);
 
         /* Drivetrain Constants */
         public static final double trackWidth = Units.inchesToMeters(22.75); 
